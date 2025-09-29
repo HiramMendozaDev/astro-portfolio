@@ -103,27 +103,21 @@
                 font-size: 1rem;
             }
 
-            /**Hero secion**/
-            .hero-content {
+            /** Projects container **/
+            .projects {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 0.5rem;
+                gap: 3rem;
             }
 
-            .hero-button {
-                width: 220px;
-                border: 3px solid black;
-                border-radius: 3rem;
-                background-color: white;
-                padding: 0.75rem 1.5rem;
-                margin: 0.5rem;
-                cursor: pointer;
-                font-family: "Poppins", sans-serif;
-                font-size: 1rem;
-                font-weight: 800;
-                box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 1);
+            /** IFRAMES **/
+
+            iframe {
+                width: 800px;
+                height: 600px;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 1rem;
             }
         </style>
     </head>
@@ -133,7 +127,7 @@
             <h1 class="navbar-logo">HIRAM MENDOZA</h1>
             <ul class="navbar-links">
                 <a class="navbar-link" href="/">Home</a>
-                <a class="navbar-link" href="/portfolio">Portfolio</a>
+                <a class="navbar-link" href="/">Portfolio</a>
                 <a class="navbar-link" href="/">Blog</a>
                 <a class="navbar-link" href="/">Contact</a>
                 <button class="navbar-theme_button"
@@ -156,107 +150,87 @@
             </ul>
         </nav>
 
-        <!-- Hero section -->
-        <section class="hero container">
-            <img
-                src="/transhumans_Roboto.svg"
-                alt="Humanoid happy robot"
-                style="width: 300px;"
-            />
-            <div class="hero-content">
-                <h2>ABOUT</h2>
+        <!-- Temporal projects container -->
+
+        <section class="projects container">
+            <div>
+                <h2>Pomodoro Timer</h2>
                 <p>
-                    I'm a <b>web developer</b> passionate about creating meaningful
-                    digital experiences that merge innovative design with flawless
-                    functionality, transforming visionary concepts into responsive,
-                    high-performance web applications using modern technologies such
-                    as React, Vue, and Astro. I'm committed to technical excellence,
-                    intuitive usability, and measurable impact in every project I
-                    undertake.
+                    A simple Pomodoro Timer application built with HTML, CSS,
+                    and JavaScript. It helps users manage their time effectively
+                    by breaking work into intervals, typically 25 minutes in
+                    length, separated by short breaks.
                 </p>
-                <div>
-                    <button class="hero-button">Download Resume</button>
-                    <button class="hero-button">Go to portfolio</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="technologies-stack">
-            <div class="container">
-                <div class="web-technologies">
-                    <h2>Web:</h2>
-                    <div class="technologies-list">
-                        <i
-                            class="fa-brands fa-html5 fa-3x"
-                            style="color: #e34f26;"></i>
-                        <i
-                            class="fa-brands fa-css3-alt fa-3x"
-                            style="color: #264de4;"></i>
-                        <i
-                            class="fa-brands fa-js-square fa-3x"
-                            style="color: #f0db4f;"></i>
-                        <i
-                            class="fa-brands fa-react fa-3x"
-                            style="color: #61dafb;"></i>
-                        <i
-                            class="fa-brands fa-vuejs fa-3x"
-                            style="color: #42b883;"></i>
-                        <i
-                            class="fa-brands fa-node-js fa-3x"
-                            style="color: #68a063;"></i>
-                        <i
-                            class="fa-brands fa-git-alt fa-3x"
-                            style="color: #f34f29;"></i>
-                        <i
-                            class="fa-brands fa-github fa-3x"
-                            style="color: #333;"></i>
-                    </div>
-                </div>
-                <div class="design-technologies">
-                    <h2>Design:</h2>
-                    <div class="technologies-list">
-                        <i
-                            class="fa-brands fa-figma fa-3x"
-                            style="color: #f24e1e;"></i>
-                        <i
-                            class="fa-brands fa-adobe fa-3x"
-                            style="color: #ff0000;"></i>
-                        <i
-                            class="fa-brands fa-sketch fa-3x"
-                            style="color: #f7b500;"></i>
-                    </div>
-                </div>
-                <div class="AI-technologies">
-                    <h2>AI:</h2>
-                    <div class="technologies-list">
-                        <i
-                            class="fa-brands fa-python fa-3x"
-                            style="color: #306998;"></i>
-                        <i
-                            class="fa-brands fa-aws fa-3x"
-                            style="color: #ff9900;"></i>
-                        <i class="fa-solid fa-robot fa-3x" style="color: #666;"
-                        ></i>
-                    </div>
-                </div>
+                <iframe src="https://hirammendozadev.github.io/simplePomodoro/" frameborder="0"></iframe>
             </div>
 
-            <section class="social">
+            <div>
+                <h2>Random Anime generator</h2>
+                <p>This project fetches and displays information about a random anime using the Jikan API, which provides data from MyAnimeList. It selects a random anime ID, retrieves its full details, and presents key information such as title, synopsis, genres, score, and more. The project is developed with vanilla JavaScript and styled using the SimpleCSS framewor</p>
+                <iframe src="https://hirammendozadev.github.io/random-anime-generator/" frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h2>Car insurance quote calculator</h2>
+                <p>
+                    A car insurance quote calculator built with HTML, CSS, and
+                    JavaScript. It allows users to input their car details and
+                    personal information to receive an estimated insurance
+                    quote.
+                </p>
+                <iframe
+                    src="https://onealpacamore.github.io/ejercicio-cotizador-seguros-auto/"
+                    frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h2>Digital Wallet Website</h2>
+                <p>Electronic Wallet landsite for a fake company.</p>
+                <iframe src="https://onealpacamore.github.io/09-nucleus-eWallet/" frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h2>Coffee Shop Website</h2>
+                <p>Landpage for an invented coffee shop.</p>
+                <iframe src="https://onealpacamore.github.io/PaginaWebCafeteria/" frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h2>Podcast website</h2>
+                <p>Landpage for a new "make your podcast" site.</p>
+                <iframe src="https://onealpacamore.github.io/PaginaWebPodcast/" frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h2>Architecture website</h2>
+                <p>Page for a invented Architecture services site.</p>
+                <iframe src="https://onealpacamore.github.io/08-sitioWebArquitectura/" frameborder="0"></iframe>
+            </div>
+
+            
+            <div>
+                <h2>TechPro Headpohnes site</h2>
+                <p>Page for promoting the new TechPRO headphones</p>
+                <iframe src="https://onealpacamore.github.io/07-audifonosTechPro/" frameborder="0"></iframe>
+            </div>
+
+             <div>
+                <h2>Furniture shop site</h2>
+                <p>Page for promoting an invented furniture shop site</p>
+                <iframe src="https://onealpacamore.github.io/eCommerce_tienda_muebles/index.html" frameborder="0"></iframe>
+            </div>
+
+              <div>
+                <h2>Lemmy Kilmister tribute page</h2>
+                <p>Small page in the memory of Lemmy Kilmister, Motorhead singer. R.I.P</p>
+                <iframe src="https://onealpacamore.github.io/fcc-tribute-page/" frameborder="0"></iframe>
+            </div>
+
+            <footer>
                 <div class="container">
-                    <h2>Find me on:</h2>
-                    <div class="social-links">
-                        <button>LinkedIn</button>
-                        <button>Github</button>
-                        <button>Dribble</button>
-                    </div>
+                    <p>&copy; 2024 Hiram Mendoza. All rights reserved.</p>
                 </div>
-
-                <footer>
-                    <div class="container">
-                        <p>&copy; 2024 Hiram Mendoza. All rights reserved.</p>
-                    </div>
-                </footer>
-            </section>
+            </footer>
         </section>
     </body>
 </html>
